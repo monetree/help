@@ -1,0 +1,5 @@
+>>> import dateutil.parser as dateformatter
+>>> dateformatter.parse('2018-12-13T05:20:06.427Z')
+datetime.datetime(2018, 12, 13, 5, 20, 6, 427000, tzinfo=tzutc())
+>>> dt=dateformatter.parse('2018-12-13T05:20:06.427Z')
+>>> dt.strftime('%dth %B %Y')
