@@ -1,87 +1,24 @@
 [
   {
-    "web_pages": [
-      "http://www.davietjal.org/"
-    ],
-    "name": "DAV Institute of Engineering & Technology",
-    "alpha_two_code": "IN",
-    "state-province": "Punjab",
-    "domains": [
-      "davietjal.org"
-    ],
-    "country": "India"
+    "name": "DAV Institute of Engineering & Technology"
   },
   {
-    "web_pages": [
-      "http://www.lpu.in/"
-    ],
-    "name": "Lovely Professional University",
-    "alpha_two_code": "IN",
-    "state-province": "Punjab",
-    "domains": [
-      "lpu.in"
-    ],
-    "country": "India"
+    "name": "Lovely Professional University"
   },
   {
-    "web_pages": [
-      "http://www.ncuindia.edu/"
-    ],
-    "name": "NorthCap University",
-    "alpha_two_code": "IN",
-    "state-province": "Haryana",
-    "domains": [
-      "ncuindia.edu"
-    ],
-    "country": "India"
+    "name": "NorthCap University"
   },
   {
-    "web_pages": [
-      "http://59.163.116.210/"
-    ],
-    "name": "University of Health Sciences Andhra Pradesh",
-    "alpha_two_code": "IN",
-    "state-province": "Andhra Pradesh",
-    "domains": [
-      "59.163.116.210"
-    ],
-    "country": "India"
+    "name": "University of Health Sciences Andhra Pradesh"
   },
   {
-    "web_pages": [
-      "http://www.aaidu.org/"
-    ],
-    "name": "Allahabad Agricultural Institute, Deemed University",
-    "alpha_two_code": "IN",
-    "state-province": null,
-    "domains": [
-      "aaidu.org"
-    ],
-    "country": "India"
+    "name": "Allahabad Agricultural Institute, Deemed University"
   },
   {
-    "web_pages": [
-      "http://www.aau.ac.in/"
-    ],
-    "name": "Assam Agricultural University",
-    "alpha_two_code": "IN",
-    "state-province": "Assam",
-    "domains": [
-      "aau.ac.in"
-    ],
-    "country": "India"
+    "name": "Assam Agricultural University"
   },
   {
-    "web_pages": [
-      "http://www.ahduni.edu.in/"
-    ],
-    "name": "Ahmedabad University",
-    "alpha_two_code": "IN",
-    "state-province": "Gujarat",
-    "domains": [
-      "ahduni.edu.in"
-    ],
-    "country": "India"
+    "name": "Ahmedabad University"
   },
   {
     "web_pages": [
