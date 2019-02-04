@@ -1,4 +1,4 @@
-
+[
   {
     "web_pages": [
       "http://www.davietjal.org/"
@@ -4560,62 +4560,18 @@
     "country": "India"
   },
   {
-    "web_pages": [
-      "http://www.vtu.ac.in/"
-    ],
     "name": "Visvesvaraya Technological University",
-    "alpha_two_code": "IN",
-    "state-province": null,
-    "domains": [
-      "vtu.ac.in"
-    ],
-    "country": "India"
   },
   {
-    "web_pages": [
-      "http://www.wbuafs.nic.in/"
-    ],
-    "name": "West Bengal University of Animal and Fishery Sciences",
-    "alpha_two_code": "IN",
-    "state-province": null,
-    "domains": [
-      "wbuafs.nic.in"
-    ],
-    "country": "India"
+    "name": "West Bengal University of Animal and Fishery Sciences"
   },
   {
-    "web_pages": [
-      "http://www.wbut.net/"
-    ],
-    "name": "West Bengal University of Technology",
-    "alpha_two_code": "IN",
-    "state-province": null,
-    "domains": [
-      "wbut.net"
-    ],
-    "country": "India"
+    "name": "West Bengal University of Technology"
   },
   {
-    "web_pages": [
-      "http://www.ycmou.com/"
-    ],
-    "name": "Yashawantrao Chavan Maharashtra Open University",
-    "alpha_two_code": "IN",
-    "state-province": null,
-    "domains": [
-      "ycmou.com"
-    ],
-    "country": "India"
+    "name": "Yashawantrao Chavan Maharashtra Open University"
   },
   {
-    "web_pages": [
-      "http://www.ysparmaruniversity.org/"
-    ],
-    "name": "Dr. YS Parmar University of Horticulture and Forestry",
-    "alpha_two_code": "IN",
-    "state-province": null,
-    "domains": [
-      "ysparmaruniversity.org"
-    ],
-    "country": "India"
+    "name": "Dr. YS Parmar University of Horticulture and Forestry"
   }
+  ]
