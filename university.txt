@@ -23,7 +23,6 @@
     ],
     "country": "India"
   },
- 
   {
     "web_pages": [
       "http://www.ncuindia.edu/"
