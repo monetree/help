@@ -1,4 +1,4 @@
-### Note: I have shared to ways to run project (both frontend and backend). If you wants to setup from scratch please follow way1 and if you have already all setup and you need updated code you should follow way2. As the codes are already setup on your system better you go for way2 to get updated code as per the changes.
+### Note: I have shared two ways to run project (both frontend and backend). If you wants to setup from scratch please follow way1 and if you have already all setup and you need updated code you should follow way2. As the codes are already setup on your system better you go for way2 to get updated code as per the changes.
 
 
 
