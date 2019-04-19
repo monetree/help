@@ -1,0 +1,8 @@
+I solved this way
+https://code.visualstudio.com/docs/setup/linux
+"Visual Studio Code is unable to watch for file changes in this large workspace" (error ENOSPC)#
+
+cat /proc/sys/fs/inotify/max_user_watches
+
+fs.inotify.max_user_watches=524288
+
