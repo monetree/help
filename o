@@ -1,0 +1,90 @@
+#imports
+import pymongo
+import json
+from bson.json_util import dumps
+from bson.son import SON
+
+#connection
+
+uri="mongodb://consumerhub-mongo:27WsTECy8u19nF1Lb7ZQG6MBDzMHLt2JSu82IJxx26l1yxQh3RKzPWutCjQLE380QP8nvakUvqrCAFbrTsjD2Q==@consumerhub-mongo.documents.azure.com:10255/?ssl=true&replicaSet=globaldb"
+myclient = pymongo.MongoClient(uri)
+db = myclient["eugenie"]
+
+#specify collection
+collection = db["chatter_master_data"]
+ignore = {
+    "ratings_raw": 0,
+    "content_noun": 0,
+    "url":0,
+    "Country": 0,
+    "location_longitude": 0,
+    "twitter_retweeted_status_author_demographics_marital_status":0,
+    "content_noun_adj": 0,
+    "twitter_retweeted_status_author_location_country": 0,
+    "site_id": 0,
+    "twitter_retweeted_status_url": 0,
+    "twitter_retweeted_status_author_location": 0,
+    "twitter_retweeted_status_author_picture_url": 0,
+    "content_norm":0,
+    "twitter_retweeted_status_sentiment": 0,
+    "date": 0,
+    "twitter_retweeted_status_author_demographics": 0,
+    "twitter_retweeted_status_author_location_county": 0,
+    "all-in-one": 0,
+    "twitter_retweeted_status_author_location_longitude": 0,
+    "Category": 0,
+    "synthesio_rank":0,
+    "human_review_status": 0,
+    "twitter_retweeted_status_author_location_state": 0,
+    "ratings_normalized": 0,
+    "twitter_retweeted_status_date": 0,
+    "sentiment": 0,
+    "title_norm": 0,
+    "location_country":0,
+    "content_parsed":0,
+    "site_name": 0,
+    "twitter_retweeted_status_author_demographics_bio_tag_list": 0,
+    "location": 0,
+    "twitter_retweeted_status_author_url": 0,
+    "title":0,
+    "twitter_retweeted_status_title": 0,
+    "title_lemmatized": 0,
+    "twitter_retweeted_status_author_demographics_gender": 0,
+    "title_noun_adj": 0,
+    "language": 0,
+    "channel":0,
+    "content_lemmatized": 0,
+    "content": 0,
+    "twitter_retweeted_status_author_location_city": 0,
+    "title_pre_processed": 0,
+    "twitter_retweeted_status_author_demographics_affinity_list": 0,
+    "title_noun": 0,
+    "twitter_retweeted_status_author_demographics_job_list": 0,
+    "twitter_retweeted_status_author_demographics_age": 0,
+    "site_type": 0,
+    "crawled_at": 0,
+    "twitter_retweeted_status_author_demographics_family_status": 0,
+    "twitter_retweeted_status_author_location_latitude": 0,
+}
+# data = collection.find({"Category":"Dish Care USA"}).limit(10)
+
+
+group = {
+    "$group" : {
+            "_id" : "$Needstate", "sites_types": { "$push" : "$site_type" }
+        }
+    }
+
+data = collection.aggregate([
+    {
+        "$match": {
+            'Keyword' : ''
+        }
+    },
+    group
+])
+
+
+res = dumps(data, indent=2)
+
+print(res)
