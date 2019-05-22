@@ -1,4 +1,4 @@
-# Steps to create and publish pyhton web app to Azure App service
+# Steps to create and publish python web app to Azure App service
 
     1. open Azure CLI 
     2. Change Powershell to bash command.
