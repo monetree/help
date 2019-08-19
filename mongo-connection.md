@@ -1,4 +1,4 @@
-1. connect using `python` using pymongo client:
+1. connect using `python` using `pymongo` client:
 
         import pymongo
         client = pymongo.MongoClient("mongodb://localhost:27017/")
