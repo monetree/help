@@ -11,3 +11,10 @@
 2. connect using `django` using `djongo` client
 
 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'consumerhub',
+            'HOST': 'mongodb://localhost:27017/',  
+        }
+    }
