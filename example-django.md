@@ -10,6 +10,8 @@ settings:
 models:
 
     from settings import db
+    from bson.json_util import dumps
+    import json
     
     def channels(request):
         category  = request.GET.get('category')
