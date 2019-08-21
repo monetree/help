@@ -1,4 +1,7 @@
+# Django mongodb api documentation
+
 settings:
+
     # databse connection in settings.py which can be used globally by just importing database.
     uri = 'mongodb://10.4.9.230:80,10.4.9.227:80,10.4.9.228:80,10.4.9.229:80/'
     myclient = pymongo.MongoClient(uri)
@@ -6,8 +9,8 @@ settings:
 
 models:
 
-	from settings import db
-	
+    from settings import db
+    
     def channels(request):
         category  = request.GET.get('category')
         country   = request.GET.get('country')
