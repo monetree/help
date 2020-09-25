@@ -28,5 +28,8 @@ run docker container backend `docker-compose up -d`
 
 ### Note: Do these inside root folder.
 
-build docker image frontend `docker build -t eligibilitycheckrdevelop_ui_new .
-run docker container frontend `docker run -dit --network trisiki_dev -p 3000:3000 eligibilitycheckrdevelop_ui_new
+build docker image frontend `docker build -t eligibilitycheckrdevelop_ui_new .`
+
+run docker container frontend `docker run -dit --network trisiki_dev -p 3000:3000 eligibilitycheckrdevelop_ui_new`
+
+### Note: Do these inside ui folder.
