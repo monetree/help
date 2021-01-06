@@ -21,6 +21,8 @@
             }
         }
 
+nano /etc/systemd/system/myapp.service
+
         [Unit]
         Description=Gunicorn instance to serve myapp
         After=network.target
@@ -34,3 +36,6 @@
 
         [Install]
         WantedBy=multi-user.target
+        
+sudo systemctl start myapp.service
+sudo systemctl enable myapp.service
