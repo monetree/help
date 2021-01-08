@@ -11,12 +11,11 @@
                 try_files $uri @proxy_to_app;
             }
 
-            location @proxy_to_app {
-                include proxy_params;
-                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-                proxy_set_header X-Forwarded-Proto $scheme;
+            location {
                 proxy_set_header Host $http_host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
                 proxy_redirect off;
+                proxy_buffering off;
                 proxy_pass http://unix:/home/data-science/main.sock;
             }
         }
