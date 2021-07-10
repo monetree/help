@@ -1,3 +1,5 @@
 sudo passwd
 vim /etc/ssh/sshd_config
 
+1. PermitRootLogin
+2. PasswordAuthentication
