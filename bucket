@@ -1,0 +1,29 @@
+storage_client=storage.Client.from_service_account_json(BUCKET_CONFIG)
+bucket=storage_client.get_bucket(BUCKET_NAME)
+bucket.cors = []
+bucket.patch()
+
+def upload_to_bucket(local_path, bucket_path):
+    blob=bucket.blob(bucket_path)
+    file=open(local_path,'rb')
+    # blob.content_type = 'image/jpeg'
+    blob.upload_from_file(file)
+    os.remove(local_path)
+
+
+def upload_to_blob_v2(link, path, name):
+    try:
+        r = requests.get(link, stream=True)
+        if r.status_code == 200:
+            with open("/tmp/"+ name, 'wb') as f:
+                r.raw.decode_content = True
+                shutil.copyfileobj(r.raw, f)
+
+        blob=bucket.blob(path + name)
+        file=open("/tmp/"+ name, 'rb')
+        blob.upload_from_file(file)
+        os.remove("/tmp/"+ name)
+        
+        return True
+    except Exception as e:
+        return False
