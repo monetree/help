@@ -1,17 +1,12 @@
 [
   {
     "intent": "Gita",
-    "examples": [
-      "who wrote gita",
-      "who wrote bhagbat gita"
-    ],
+    "examples": ["who wrote gita", "who wrote bhagbat gita"],
     "metadata": [
       {
         "text": "Maharshi Vyasa dev",
         "variables": {
-          "public": {
-            
-          }
+          "public": {}
         }
       }
     ],
@@ -20,21 +15,30 @@
   },
   {
     "intent": "Krishna",
-    "examples": [
-      "who killed karna",
-      "How karna died"
-    ],
+    "examples": ["who killed karna", "How karna died"],
     "metadata": [
       {
         "text": "karna was killed by arjuna with the help of lord krishna",
         "variables": {
-          "public": {
-            
-          }
+          "public": {}
         }
       }
     ],
     "ignore_post_response": false,
     "confidence": 1.0
-  }
+  },
+    {
+      "intent": "Ram",
+      "examples": ["who wrote ramayan"],
+      "metadata": [
+        {
+          "text": "Valmiki wrote ramayan",
+          "variables": {
+            "public": {}
+          }
+        }
+      ],
+      "ignore_post_response": false,
+      "confidence": 1.0
+    }
 ]
