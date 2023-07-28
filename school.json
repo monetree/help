@@ -1,0 +1,40 @@
+[
+  {
+    "intent": "Gita",
+    "examples": [
+      "who wrote gita",
+      "who wrote bhagbat gita"
+    ],
+    "metadata": [
+      {
+        "text": "Maharshi Vyasa dev",
+        "variables": {
+          "public": {
+            
+          }
+        }
+      }
+    ],
+    "ignore_post_response": false,
+    "confidence": 1.0
+  },
+  {
+    "intent": "Krishna",
+    "examples": [
+      "who killed karna",
+      "How karna died"
+    ],
+    "metadata": [
+      {
+        "text": "karna was killed by arjuna with the help of lord krishna",
+        "variables": {
+          "public": {
+            
+          }
+        }
+      }
+    ],
+    "ignore_post_response": false,
+    "confidence": 1.0
+  }
+]
